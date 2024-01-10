@@ -55,9 +55,9 @@ const GlobalMain = () => {
                                     {e.type}
                                 </h3>
                                 <div className='w-full flex justify-center mt-8'>
-                                    <button type='submit' className='active:bg-gray-100 py-1 px-6 text-lg bg-white rounded font-bold font-body'>
+                                    <a href='/shini' type='submit' className='active:bg-gray-100 py-1 px-6 text-lg bg-white rounded font-bold font-body'>
                                         Купить
-                                    </button>
+                                    </a>
                                 </div>
                                 <img className='absolute bottom-0 -z-10' src={e.img} alt={e.alt} />
                             </div>
@@ -87,10 +87,10 @@ const GlobalMain = () => {
                                         {data.text}
                                     </p>
                                 </div>
-                                <button className='w-full flex items-center bg-primary py-4 text-2xl font body font-bold
+                                <a href='/blog' className='w-full flex items-center bg-primary py-4 text-2xl font body font-bold
                                 gap-4 text-white justify-center'>
                                     {data.icon} Читать дальше
-                                </button>
+                                </a>
                             </div>
                         ))}
                     </div>
@@ -110,7 +110,7 @@ const GlobalMain = () => {
                                 У нас вы сможете купить зимние и летние шины, литые и flow forming автомобильные диски. Есть удобный инструмент для подбора шин и дисков по размерам либо модели Вашего автомобиля.
                                 Так, же для зарегистрированных клиентов мы предоставляем скидки. Большинство товаров в нашем магазине.
                             </p>
-                            <a className='bg-primary max-w-[200px] text-white text-xl py-2 px-4' href='#!'>Узнать больше</a>
+                            <a className='bg-primary max-w-[200px] text-white text-xl py-2 px-4' href='/about'>Узнать больше</a>
                         </div>
                     </div>
                 </section>

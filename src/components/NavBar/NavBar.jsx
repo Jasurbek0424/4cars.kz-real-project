@@ -17,7 +17,7 @@ const NavBar = () => {
             <div>
                 <div className='flex pt-7 text-white font-body justify-between items-start'>
                     <div className='flex items-center gap-7'>
-                        <a href="">
+                        <a href="/">
                             <img className='w-52' src={Logo} alt='Logo' />
                         </a>
                         <div className='flex items-center gap-2'>
