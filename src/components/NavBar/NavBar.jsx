@@ -104,7 +104,7 @@ const NavBar = () => {
                         <a href='/payment' className='list__link text-primary text-lg font-body'>Оплата и доставка</a>
                     </li>
                     <li>
-                        <a href='/stocks' className='list__link text-primary text-lg font-body'>Акции и скидки</a>
+                        <a href='/stocks' className='list__link text-primary text-lg font-body'>Новости</a>
                     </li>
                     <li>
                         <a href='/contacts' className='list__link text-primary text-lg font-body'>Контакты</a>

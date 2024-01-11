@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 const Change = () => {
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full h-screen bg-map" >
+            <header className=" bg-no-repeat bg-cover bg-center w-full pb-12 bg-map" >
                 <div className='container '>
                     <NavBar />
                 </div>

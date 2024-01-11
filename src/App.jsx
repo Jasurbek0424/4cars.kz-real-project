@@ -30,8 +30,8 @@ function App() {
           <Route path="/" element={<React.Fragment><Hero /><GlobalMain /><Footer /></React.Fragment>} />
           <Route path="/shini" element={<Shini />} />
           <Route path="/diski" element={<Diski />} />
-          <Route path="//payment" element={<Payment />} />
-          <Route path="//payment" element={<Payment />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/stocks" element={<Stocks />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/shinomontaj" element={<Shinomontaj />} />

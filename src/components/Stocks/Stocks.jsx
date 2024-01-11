@@ -12,7 +12,7 @@ const Stocks = () => {
                     <NavBar />
                     <div className='mt-28'>
                         <h1 className='font-body font-bold text-6xl flex flex-col text-white'>
-                            Акции и скидки
+                            Новости
                         </h1>
                     </div>
                 </div>

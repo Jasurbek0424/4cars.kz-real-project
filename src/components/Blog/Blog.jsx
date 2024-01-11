@@ -40,7 +40,7 @@ const Blog = () => {
 
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full h-screen bg-map" >
+            <header className=" bg-no-repeat bg-cover bg-center w-full pb-10 bg-map" >
                 <div className='container '>
                     <NavBar />
                     <div className='mt-28'>

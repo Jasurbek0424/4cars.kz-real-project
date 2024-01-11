@@ -56,7 +56,7 @@ const Footer = () => {
                             <button type='submit'
                                 className='flex items-center justify-center bg-primary py-4 rounded-lg
                                 text-xl text-white gap-3 '>
-                                Связатся с нами <FaAngleRight />
+                                Связаться с нами <FaAngleRight />
                             </button>
                         </form>
                         <img className='max-h-[740px]' src={MapFrame} alt='' />
@@ -73,7 +73,7 @@ const Footer = () => {
                                     <a className='text-xl' href='/blog'>Блог</a>
                                 </li>
                                 <li>
-                                    <a className='text-xl' href='#!'>Новинки </a>
+                                    <a className='text-xl' href='/stocks'>Новости </a>
                                 </li>
                                 <li>
                                     <a className='text-xl' href='/account'>Корзина</a>

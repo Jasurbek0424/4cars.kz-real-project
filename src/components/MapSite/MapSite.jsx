@@ -6,7 +6,7 @@ import Footer from './../Footer/Footer';
 const MapSite = () => {
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full h-screen bg-map" >
+            <header className=" bg-no-repeat bg-cover bg-center w-full pb-10 bg-map" >
                 <div className='container '>
                     <NavBar />
                     <div className='mt-28'>
@@ -18,78 +18,118 @@ const MapSite = () => {
             </header>
             <main>
                 <div className='container'>
-                    <section className='mt-40 text-center mb-14'>
-                        <h2 className='font-body font-bold text-5xl text-primary mb-10'>
-                            Главная
-                        </h2>
-                        <ul className='max-w-[900px] gap-10 m-auto flex flex-wrap justify-center border py-8 px-8 
-                        shadow-lg border-primary shadow-gray-400'>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/shini'>Шины</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/diski'>Диски</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/payment'>Оплата и доставка</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/stocks'>Акции и скидки</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/contacts'>Контакты </a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/shinomontaj'>Шиномонтаж</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/404'>404</a>
-                            </li>
-                        </ul>
+                    <section className='mt-40  mb-14 flex justify-between'>
+                        <div>
+                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                                Навигация
+                            </h2>
+                            <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
+                                <li>
+                                    <a href='/'>Главная</a>
+                                </li>
+                                <li>
+                                    <a href='/shini'>Шины</a>
+                                </li>
+                                <li>
+                                    <a href='/diski'>Диски</a>
+                                </li>
+                                <li>
+                                    <a href='/payment'>Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href='/contacts'>Контакты</a>
+                                </li>
+                                <li>
+                                    <a href='/shinomontaj'>Шиномонтаж</a>
+                                </li>
+                                <li>
+                                    <a href='/product'>Рассрочка товара</a>
+                                </li>
+                                <li>
+                                    <a href='/change'>Возврат и обмен</a>
+                                </li>
+                                <li>
+                                    <a href='/about'>О компании</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                                Полезное
+                            </h2>
+                            <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
+                                <li>
+                                    <a href='/stocks'>Новости</a>
+                                </li>
+                                <li>
+                                    <a href='/stocks'>Другие Новости</a>
+                                </li>
+                                <li>
+                                    <a href='/stocks'>Другие Новости</a>
+                                </li>
+                                <li>
+                                    <a href='/stocks'>Другие Новости</a>
+                                </li>
+                                <li>
+                                    <a href='/stocks'>Другие Новости</a>
+                                </li>
+                                <li>
+                                    <a href='/stocks'>Другие Новости</a>
+                                </li>
+                                <li>
+                                    <a href='/stocks'>Другие Новости</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                                Партнеры
+                            </h2>
+                            <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
+                                <li>
+                                    <a href='#!'>Ford Mustang</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Lamborgini</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>BMW</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Mersedes-Benz</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Chevrolet</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Hundai</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                                Новое
+                            </h2>
+                            <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
+                                <li>
+                                    <a href='#!'>Купи сейчас – забери весной</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Распродажа ламинированной фанеры</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Фасадные панели TECOS со скидкой 25%</a>
+                                </li>
+                                <li>
+                                    <a href='#!'>Представляем акцию на террасную доску </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
                     </section>
-                    <section className='mt-40 text-center mb-14'>
-                        <h2 className='font-body font-bold text-5xl text-primary mb-10'>
-                            Дополнительно
-                        </h2>
-                        <ul className='max-w-[900px] gap-10 m-auto flex flex-wrap justify-center border py-8 px-8 
-                        shadow-lg border-primary shadow-gray-400'>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/shini'>Шины</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/diski'>Диски</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/payment'>Оплата и доставка</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/stocks'>Акции и скидки</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/contacts'>Контакты </a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/shinomontaj'>Шиномонтаж</a>
-                            </li>
-                            <li>
-                                <a className='text-darkMain font-body font-medium text-2xl
-                                underline' href='/404'>404</a>
-                            </li>
-                        </ul>
-                    </section>
+
                 </div>
             </main>
             <footer>
