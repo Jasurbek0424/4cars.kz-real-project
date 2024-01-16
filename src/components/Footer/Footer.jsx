@@ -74,13 +74,13 @@ const Footer = () => {
                                 <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Информация</h2>
                                 <ul className='flex flex-col gap-4 footer__list'>
                                     <li>
-                                        <a className='text-xl' href='/map-site'>Карта сайта </a>
+                                        <a className='text-xl' href='/sitemap'>Карта сайта </a>
                                     </li>
                                     <li>
                                         <a className='text-xl' href='/blog'>Блог</a>
                                     </li>
                                     <li>
-                                        <a className='text-xl' href='/stocks'>Новости </a>
+                                        <a className='text-xl' href='/news'>Новости </a>
                                     </li>
                                     <li>
                                         <a className='text-xl' href='/account'>Корзина</a>
@@ -97,13 +97,13 @@ const Footer = () => {
                                         <a className='text-xl' href='/contacts'>Контакты </a>
                                     </li>
                                     <li>
-                                        <a className='text-xl' href='/shinomontaj'>Шиномонтаж</a>
+                                        <a className='text-xl' href='/shinomontazh'>Шиномонтаж</a>
                                     </li>
                                     <li>
-                                        <a className='text-xl' href='/change'>Возврат и обмен  </a>
+                                        <a className='text-xl' href='/garantii'>Возврат и обмен  </a>
                                     </li>
                                     <li>
-                                        <a className='text-xl' href='/payment'>Оплата и доставка</a>
+                                        <a className='text-xl' href='/delivery'>Оплата и доставка</a>
                                     </li>
                                 </ul>
                             </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                                         <a className='text-xl' href='/account'>Последние</a>
                                     </li>
                                     <li>
-                                        <a className='text-xl' href='/shinomontaj'>Шиномонтаж</a>
+                                        <a className='text-xl' href='/shinomontazh'>Шиномонтаж</a>
                                     </li>
                                 </ul>
                             </div>

@@ -105,22 +105,22 @@ const NavBar = () => {
 
                     <ul className='flex justify-around flex-wrap gap-1 max-w-[950px] m-auto mt-8 py-3 px-2 bg-white rounded-md list'>
                         <li>
-                            <a href='/shini' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Шины</a>
+                            <a href='/tires' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Шины</a>
                         </li>
                         <li>
-                            <a href='/diski' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Диски</a>
+                            <a href='/rims' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Диски</a>
                         </li>
                         <li>
-                            <a href='/payment' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Оплата и доставка</a>
+                            <a href='/delivery' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Оплата и доставка</a>
                         </li>
                         <li>
-                            <a href='/stocks' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Новости</a>
+                            <a href='/news' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Новости</a>
                         </li>
                         <li>
                             <a href='/contacts' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Контакты</a>
                         </li>
                         <li>
-                            <a href='/shinomontaj' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Шиномонтаж</a>
+                            <a href='/shinomontazh' className='list__link text-primary lg:text-lg md:text-xs sm:text-xs text-xs font-body'>Шиномонтаж</a>
                         </li>
                     </ul>
                 </div >

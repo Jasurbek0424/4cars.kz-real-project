@@ -7,7 +7,7 @@ import Vector1 from '../../assets/Vector1.png'
 import Vector2 from '../../assets/Vector2.png'
 import Vector3 from '../../assets/Vector3.png'
 import Partners from '../templates/Partners';
-import BlogImg from '../../assets/BlogImg.png';
+import BlogImg from '../../assets/BlogImg.png'
 import { IoBookOutline } from "react-icons/io5";
 import AboutImg from '../../assets/AboutImg.jpg';
 import Hits from '../templates/Hits';

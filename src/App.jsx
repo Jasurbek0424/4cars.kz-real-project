@@ -28,16 +28,16 @@ function App() {
       <>
         <Routes>
           <Route path="/" element={<React.Fragment><Hero /><GlobalMain /><Footer /></React.Fragment>} />
-          <Route path="/shini" element={<Shini />} />
-          <Route path="/diski" element={<Diski />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/stocks" element={<Stocks />} />
+          <Route path="/tires" element={<Shini />} />
+          <Route path="/rims" element={<Diski />} />
+          <Route path="/delivery" element={<Payment />} />
+          <Route path="/news" element={<Stocks />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/shinomontaj" element={<Shinomontaj />} />
-          <Route path="/map-site" element={<MapSite />} />
+          <Route path="/shinomontazh" element={<Shinomontaj />} />
+          <Route path="/sitemap" element={<MapSite />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
-          <Route path="/change" element={<Change />} />
+          <Route path="/garantii" element={<Change />} />
           <Route path="/search-diski" element={<SearchDiski />} />
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Account />} />
