@@ -11,11 +11,10 @@ export default function Playground() {
     };
 
     return (
-        <Stack spacing={1} sx={{ width: 300 }}>
-
+        <Stack spacing={1} className='autoCompleteContent'>
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable1"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Производители" variant="standard" />
@@ -23,7 +22,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable2"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Модель шины" variant="standard" />
@@ -31,7 +30,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable3"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Ширина шины" variant="standard" />
@@ -39,7 +38,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable4"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Высота" variant="standard" />
@@ -47,7 +46,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable5"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Диаметр шины" variant="standard" />
@@ -55,7 +54,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable6"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Сезонность" variant="standard" />
@@ -63,7 +62,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable7"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Шипы" variant="standard" />
@@ -71,7 +70,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable8"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Индекс нагрузки" variant="standard" />
@@ -79,7 +78,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable9"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Индекс скорости" variant="standard" />
@@ -87,7 +86,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable10"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="RunFlat" variant="standard" />
@@ -95,7 +94,7 @@ export default function Playground() {
             />
             <Autocomplete
                 {...defaultProps}
-                id="disable-clearable"
+                id="disable-clearable11"
                 disableClearable
                 renderInput={(params) => (
                     <TextField {...params} label="Производители" variant="standard" />

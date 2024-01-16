@@ -1,0 +1,5 @@
+@media (max-width: 840px) {
+    .fourToFour {
+        flex-direction: column;
+    }
+}

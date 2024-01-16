@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import CardLogin from '../templates/CardLogin';
 import CardRegister from '../templates/CardRegister';
 import Footer from './../Footer/Footer';
+import './Login.css';
 
 
 

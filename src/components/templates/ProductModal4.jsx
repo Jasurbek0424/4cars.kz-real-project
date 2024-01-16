@@ -5,16 +5,16 @@ const ProductModal4 = () => {
     return (
         <>
             <div className='mt-10'>
-                <h2 className='font-body font-bold mb-5 text-2xl '>
+                <h2 className='font-body font-bold mb-5 2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg sm:text-md text-sm  '>
                     Внимание!
                 </h2>
-                <p className='fony-body tracking-wider text-lg mb-8'>
+                <p className='fony-body tracking-wider 2xl:text-lg xl:text-lg lg:text-lg md:text-md sm:text-sm text-xs mb-8'>
                     Получая диски или шины, необходимо детально осмотреть их на наличие визуальных дефектов. После подписания товарной накладной претензии к внешнему виду колес не принимаются.
                 </p>
-                <h2 className='font-body font-bold mb-5 text-2xl '>
+                <h2 className='font-body font-bold mb-5 2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg sm:text-md text-sm  '>
                     Обмен и возврат товара
                 </h2>
-                <p className='fony-body tracking-wider text-lg flex flex-col gap-4'>
+                <p className='fony-body tracking-wider 2xl:text-lg xl:text-lg lg:text-lg md:text-md sm:text-sm text-xs flex flex-col gap-4'>
                     <span>
                         Покупатель может вернуть шины или диски в течение 14 дней со дня доставки.
                         При возврате или обмене товара покупатель при себе должен иметь, товарную накладную, кассовый чек или любой иной документ, подтверждающий факт приобретения товара.

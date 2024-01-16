@@ -1,0 +1,20 @@
+@media (max-width: 650px) {
+    .filterProduct {
+        flex-direction: column;
+    }
+
+    .blockImg {
+        height: 102px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.blockImg {
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

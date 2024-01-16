@@ -1,81 +1,67 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import TovarModal1 from './ProductModal1';
-import TovarModal2 from './ProductModal2';
-import ProductModal5 from './ProductModal5';
-import ProductModal4 from './ProductModal4';
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
+import ProductModal1 from './ProductModal1';
+import ProductModal2 from './ProductModal2';
 import ProductModal3 from './ProductModal3';
+import ProductModal4 from './ProductModal4';
+import ProductModal5 from './ProductModal5';
 
-function CustomTabPanel(props) {
-    const { children, value, index, ...other } = props;
+const Tabs = () => {
+    const [activeModal, setActiveModal] = useState('modal1');
+
+    const openModal = (modalType) => {
+        setActiveModal(modalType);
+    };
 
     return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
-                </Box>
-            )}
-        </div>
-    );
-}
+        <>
+            <div className=''>
+                <section className='mt-20 mb-20 font-body justify-between accountContent'>
+                    <div className='max-w-[900px] w-full flex gap-4 px-8 justify-between items-center flex-wrap 2xl:text-md
+                    xl:text-md lg:text-sm md:border-b border py-2'>
+                        <button
+                            onClick={() => openModal('modal1')}
+                            className={`border-b-4 ${activeModal === 'modal1' ? 'border-primary' : 'border-transparent'}`}
+                            type='submit'>
+                            Описание
+                        </button>
+                        <button
+                            onClick={() => openModal('modal2')}
+                            className={`border-b-4 ${activeModal === 'modal2' ? 'border-primary' : 'border-transparent'}`}
+                            type='submit'>
+                            Другие варианты
+                        </button>
+                        <button
+                            onClick={() => openModal('modal3')}
+                            className={`border-b-4 ${activeModal === 'modal3' ? 'border-primary' : 'border-transparent'}`}
+                            type='submit'>
+                            Оплата и доставка
+                        </button>
+                        <button
+                            onClick={() => openModal('modal4')}
+                            className={`border-b-4 ${activeModal === 'modal4' ? 'border-primary' : 'border-transparent'}`}
+                            type='submit'>
+                            Возврат и гарантия
+                        </button>
+                        <button
+                            onClick={() => openModal('modal5')}
+                            className={`border-b-4 ${activeModal === 'modal5' ? 'border-primary' : 'border-transparent'}`}
+                            type='submit'>
+                            Условия кредитования
+                        </button>
+                    </div>
 
-CustomTabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
+                    <div className='mt-6 w-full flex-col flex justify-center items-center  px-4'>
+                        {activeModal === 'modal1' && (<ProductModal1 />)}
+                        {activeModal === 'modal2' && (<ProductModal2 />)}
+                        {activeModal === 'modal3' && (<ProductModal3 />)}
+                        {activeModal === 'modal4' && (<ProductModal4 />)}
+                        {activeModal === 'modal5' && (<ProductModal5 />)}
+                    </div>
+                </section>
+            </div>
+        </>
+    );
 };
 
-function a11yProps(index) {
-    return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
-    };
-}
-
-export default function BasicTabs() {
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
-
-    return (
-        <Box sx={{ width: '100%' }}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Описание" {...a11yProps(0)} />
-                    <Tab label="Другие варианты" {...a11yProps(1)} />
-                    <Tab label="Оплата и доставка" {...a11yProps(2)} />
-                    <Tab label="Возврат и гарантия" {...a11yProps(3)} />
-                    <Tab label="Условия кредитования" {...a11yProps(4)} />
-                </Tabs>
-            </Box>
-            <CustomTabPanel value={value} index={0}>
-                <TovarModal1 />
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
-                <TovarModal2 />
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
-                <ProductModal3 />
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={3}>
-                <ProductModal4 />
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={4}>
-                <ProductModal5 />
-            </CustomTabPanel>
-        </Box>
-    );
-}
+export default Tabs;

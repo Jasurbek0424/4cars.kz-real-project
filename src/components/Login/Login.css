@@ -1,0 +1,51 @@
+@media (max-width: 1023px) {
+    .loginForm img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginForm {
+        flex-direction: column-reverse;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
+        padding: 0 15px;
+    }
+
+    .loginForm img {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .loginForm form {
+        padding: 0;
+    }
+
+    .loginForm label {
+        font-size: 14px !important;
+    }
+
+    .loginForm button {
+        font-size: 14px !important;
+    }
+
+    .registrationForm {
+        padding: 0 15px 60px;
+    }
+
+    .registrationForm label {
+        font-size: 14px !important;
+    }
+
+    .registrationForm button {
+        font-size: 14px !important;
+    }
+
+    .registrationForm input {
+        padding: 0 10px !important;
+        font-size: 16px !important;
+    }
+
+}

@@ -1,0 +1,17 @@
+@media (max-width: 900px) {
+    .site__mapItem {
+        width: 33%;
+    }
+}
+
+@media (max-width: 588px) {
+    .site__mapItem {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .site__mapItem ul {
+        list-style: none;
+    }
+}

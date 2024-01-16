@@ -7,6 +7,7 @@ import Blog2 from '../../assets/blog2.png';
 import Blog3 from '../../assets/blog3.png';
 import Blog4 from '../../assets/blog4.jpg';
 import Footer from './../Footer/Footer';
+import './Blog.css';
 
 const Blog = () => {
 
@@ -40,11 +41,12 @@ const Blog = () => {
 
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full pb-10 bg-map" >
+            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
                 <div className='container '>
                     <NavBar />
-                    <div className='mt-28'>
-                        <h1 className='font-body font-bold text-6xl flex flex-col text-white'>
+                    <div className='mt-28 px-4'>
+                        <h1 className=' font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+                        2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
                             Блог
                         </h1>
                     </div>
@@ -52,31 +54,32 @@ const Blog = () => {
             </header>
             <main>
                 <div className='container'>
-                    <section className='mt-20  flex justify-center gap-6 mb-20'>
-                        <div className='max-w-[650px] w-full'>
-                            <img className='mb-20' src={BlogImg} alt='' />
-                            <div className='text-darkMain font-body max-w-[600px] flex flex-col gap-5'>
+                    <section className='blog mt-14 flex justify-center gap-6 mb-20'>
+                        <div className='max-w-[650px] w-full px-4'>
+                            <img className='mb-6' src={BlogImg} alt='' />
+                            <div className='text-darkMain font-body max-w-[600px] flex flex-col gap-4'>
                                 <span className=''>
                                     {formattedDate}
                                 </span>
-                                <h2 className='font-semibold text-4xl'>
+                                <h2 className='font-semibold 
+                                2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md blog__title'>
                                     Что нужно знать про шины Boto?
                                 </h2>
-                                <p className='text-lg text-justify'>
+                                <p className='2xl:text-lg xl:text-lg lg:text-lg md:text-md sm:text-sm text-sm text-justify'>
                                     Автомобилисты, Вы уже видели? Кто это тут у нас? Новички всегда подвергаются пристальному вниманию! Так и шины Boto – уверенно ворвались на прилавки, да еще и с громкими заявлениями, мол «Вы нас полюбите!».
                                 </p>
                             </div>
                         </div>
-                        <div className='flex flex-wrap justify-between gap-4'>
+                        <div className='flex flex-wrap justify-center gap-5 blog__contents'>
                             {blogs.map(e => (
-                                <div key={e.id} className=' flex flex-col gap-3 max-w-[380px]'>
+                                <div key={e.id} className='blog__item flex flex-col gap-3 max-w-[380px]'>
                                     <img src={e.img} alt='' className='max-h-[295px] h-full' />
                                     <span>
                                         {formattedDate}
                                     </span>
-                                    <p className='text-xl tracking-wide font-semibold'>
+                                    <h2 className='text-xl tracking-wide font-semibold'>
                                         {e.context}
-                                    </p>
+                                    </h2>
                                 </div>
                             ))}
                         </div>

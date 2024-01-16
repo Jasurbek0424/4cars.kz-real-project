@@ -1,0 +1,41 @@
+@media (max-width: 1023px) {
+    .contact__info {
+        flex-wrap: wrap;
+    }
+
+
+    .contact__item a {
+        font-size: 12px !important;
+    }
+
+    .contact__item h2 {
+        font-size: 14px !important;
+    }
+
+    .props {
+        gap: 10px !important;
+    }
+
+    .props p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__map {
+        display: none;
+    }
+
+    .contact__info {
+        transform: translateY(0) !important;
+        gap: 15px;
+    }
+
+    .contact__item {
+        padding-top: 15px !important;
+    }
+
+    .props p {
+        font-size: 18px;
+    }
+}

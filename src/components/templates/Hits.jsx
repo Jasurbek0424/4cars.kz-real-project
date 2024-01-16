@@ -18,10 +18,10 @@ const Hits = () => {
                 <h2 className='font-body text-center text-3xl mb-7 font-bold'>
                     Хиты продаж
                 </h2>
-                <div className='flex justify-around'>
+                <div className='flex 2xl:justify-around justify-center flex-wrap gap-5'>
                     {xits.map(e => (
-                        <div key={e.id} className='text-center flex justify-center  flex-col'>
-                            <img src={e.img} alt='' className='max-h-[480px]' />
+                        <div key={e.id} className='text-center flex justify-center 2xl:border-none border py-4 px-5 flex-col'>
+                            <img src={e.img} alt='' className='2xl:max-w-[480px] xl:max-w-[400px] lg:max-w-[380px] md:max-w-[280px] sm:max-w-[240px] max-h-[200px] ' />
                             <div className='max-w-[180px] m-auto text-center flex flex-col justify-between items-center gap-3'>
                                 <p className='text-xl'>
                                     {e.type}

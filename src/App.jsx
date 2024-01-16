@@ -19,8 +19,8 @@ import Change from './components/Change/Change';
 import SearchDiski from './components/SearchDiski/SearchDiski';
 import Login from './components/Login/Login';
 import Account from './components/Account/Account';
-import FourNullFour from './components/404/FourNullFour';
 import Product from './components/Product/Product';
+import FourNullFour from './components/404/FourNullFour';
 
 function App() {
   return (
@@ -30,7 +30,6 @@ function App() {
           <Route path="/" element={<React.Fragment><Hero /><GlobalMain /><Footer /></React.Fragment>} />
           <Route path="/shini" element={<Shini />} />
           <Route path="/diski" element={<Diski />} />
-          <Route path="/payment" element={<Payment />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/stocks" element={<Stocks />} />
           <Route path="/contacts" element={<Contacts />} />
@@ -43,7 +42,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Account />} />
           <Route path="/product" element={<Product />} />
-          <Route path='/404' element={<FourNullFour />} />
+          <Route path="*" element={<FourNullFour />} />
         </Routes>
       </>
     </Router >

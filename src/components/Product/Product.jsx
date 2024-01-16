@@ -9,6 +9,7 @@ import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Footer from './../Footer/Footer';
+import './Product.css';
 
 
 
@@ -25,7 +26,7 @@ const Product = () => {
         countProduct < product ? setCountProduct(countProduct + 1) : countProduct
     }
     const Decrement = () => {
-        countProduct > 0 ? setCountProduct(countProduct - 1) : 0
+        countProduct > 1 ? setCountProduct(countProduct - 1) : 0
     }
     const months = [
         '1 мес', '2 мес', '3 мес', '4 мес',
@@ -55,9 +56,9 @@ const Product = () => {
             </header>
             <main>
                 <div className='container'>
-                    <section className='mt-14 font-body'>
-                        <div className=' flex gap-12'>
-                            <h2 className='text-3xl font-body font-bold'>
+                    <section className='mt-14 font-body px-4'>
+                        <div className=' flex gap-5 ranking'>
+                            <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-md text-md font-body font-bold '>
                                 Шины BOTO <span>Genesys 208</span> <span>155/70</span> R12 73T
                             </h2>
                             <div className='flex gap-6'>
@@ -69,8 +70,8 @@ const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='mt-10 flex max-w-[1400px] w-full justify-between m-auto mb-24'>
-                            <div className='flex items-center gap-4 max-w-[700px] w-full justify-between'>
+                        <div className='mt-10 flex max-w-[1400px] w-full justify-between gap-4 mx-auto mb-24 productHero'>
+                            <div className='flex items-center gap-4 max-w-[700px] w-full justify-between productLeft'>
                                 <img src={Complect} alt='' />
                                 <div className='flex flex-col gap-4'>
                                     <p className='flex gap-3 text-xl text-gray-500'>
@@ -112,46 +113,50 @@ const Product = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='flex items-center gap-7 flex-wrap max-w-[620px] w-full'>
-                                    <h2 className='text-darkMain text-3xl font-body font-bold max-w-[180px] w-full'>
+                                <div className='flex items-center gap-7 flex-wrap max-w-[620px] w-full productRight'>
+                                    <h2 className='text-darkMain 2xl:text-3xl
+                                    xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl text-xl font-body font-bold max-w-[180px] w-full'>
                                         {ProductPrice} тг
                                     </h2>
-                                    <p className='text-2xl flex flex-col leading-10 '>
+                                    <p className='2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg sm:text-md text-md flex flex-col leading-10 '>
                                         В наличии: {product} шт.
                                         <span className='text-primary' >в 1 магазине</span>
                                     </p>
 
-                                    <div className='flex items-center gap-5 text-5xl '>
+                                    <div className='flex items-center gap-5 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-xl'>
                                         <button
                                             onClick={Decrement}
-                                            className='text-6xl text-gray-500'
+                                            className='2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-2xl text-gray-500'
                                         >
                                             -
                                         </button>
-                                        <p className=' w-14 text-center'>
+                                        <p className='2xl:w-14 xl:w-12 lg:w-10 md:w-8 sm:w-6 w-6 text-center'>
                                             {countProduct}
                                         </p>
                                         <button
-                                            className='text-6xl text-gray-500'
+                                            className='2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-2xl text-gray-500'
                                             onClick={Increment}>
                                             +
                                         </button>
                                     </div>
-                                    <div className='flex flex-wrap items-center gap-5 w-full'>
-                                        <button type='submit' className='py-2 bg-primary max-w-[300px] w-full text-2xl text-white rounded active:bg-blue-700'>
+                                    <div className='flex flex-wrap items-center gap-5 w-full btnsBuyProduct'>
+                                        <button type='submit' className='py-2 bg-primary max-w-[300px] w-full 2xl:text-2xl
+                                        xl:text-xl lg:text-xl md:text-lg sm:text-md text-sm text-white rounded active:bg-blue-700'>
                                             В корзину
                                         </button>
-                                        <button type='submit' className='py-2 bg-primary max-w-[300px] w-full text-2xl text-white rounded active:bg-blue-700'>
+                                        <button type='submit' className='py-2 bg-primary max-w-[300px] w-full 2xl:text-2xl
+                                        xl:text-xl lg:text-xl md:text-lg sm:text-md text-sm text-white rounded active:bg-blue-700'>
                                             Купить в один клик
                                         </button>
                                     </div>
-                                    <div className='flex max-w-[620px] w-full'>
+                                    <div className='flex max-w-[620px] w-full btnKredit'>
                                         <div className='bg-red-600 max-w-[200px] w-full rounded-s-lg text-white'>
                                             {selectedMonth && (
-                                                <div className=' px-3'>
-                                                    <p>рассрочка</p>
-                                                    <div className='flex items-end gap-4'>
-                                                        <p className='font-bold text-xl tracking-widest'>
+                                                <div className='px-3 pt-1'>
+                                                    <p className='text-sm text-center'>рассрочка</p>
+                                                    <div className='flex items-end gap-4 justify-center'>
+                                                        <p className='font-bold 2xl:text-xl xl:text-xl lg:text-lg md:text-lg
+                                                        sm:text-lg text-md tracking-widest'>
                                                             {calculateInstallment(selectedMonth)} </p>
                                                         <span>
                                                             тг/мес
@@ -165,10 +170,11 @@ const Product = () => {
                                             onChange={(event, newValue) => setSelectedMonth(newValue)}
                                             options={months}
                                             renderInput={(params) => <TextField {...params} />}
-                                            className='max-w-[170px] hover:outline-none border-red-600 border rounded-e-lg w-full text-center cursor-pointer'
+                                            className='max-w-[170px] hover:outline-none border-red-600 border 
+                                            2xl:rounded-e-lg xl:rounded-e-lg md:rounded-e-lg lg:rounded-e-lg sm:rounded-e-lg rounded-none w-full text-center cursor-pointer'
                                         />
                                     </div>
-                                    <div className='w-full'>
+                                    <div className='w-full hotLine'>
                                         <p className='flex flex-col text-xl gap-4'>
                                             Звоните и заказывайте на номер: <a className='underline text-primary' href='tel:+7(701)744-80-07'>+7(701)744-80-07</a>
                                             <span>
@@ -180,7 +186,7 @@ const Product = () => {
                             </div>
                         </div>
                     </section>
-                    <section className='mb-20'>
+                    <section className=' w-full'>
                         <Tabs />
                     </section>
                 </div >

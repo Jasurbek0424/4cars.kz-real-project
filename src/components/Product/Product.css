@@ -1,0 +1,104 @@
+@media (max-width: 1535px) {
+    .productLeft {
+        max-width: 530px !important;
+    }
+
+    .productLeft img {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1279px) {
+    .productHero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productRight {
+        justify-content: center;
+    }
+
+    .productLeft p {
+        font-size: 18px;
+    }
+
+    .productLeft div {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .accountContent div {
+        justify-content: center;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 767px) {
+    .ranking {
+        flex-direction: column;
+    }
+
+    .productLeft p {
+        font-size: 16px;
+    }
+
+    .productLeft img {
+        max-width: 170px;
+    }
+
+    .btnsBuyProduct {
+        justify-content: center;
+    }
+
+    .btnsBuyProduct button {
+        max-width: 200px;
+    }
+
+    .btnKredit {
+        justify-content: center;
+    }
+
+    .hotLine {
+        text-align: center;
+    }
+
+    .hotLine p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 455px) {
+    .productLeft {
+        flex-direction: column;
+    }
+
+    .productLeft div {
+        gap: 0px;
+    }
+
+    .productLeft img {
+        max-width: 100px;
+    }
+
+    .productLeft p {
+        font-size: 12px;
+    }
+
+    .hotLine p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .btnKredit {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnKredit div {
+        max-width: 180px;
+        border-radius: 0;
+    }
+}

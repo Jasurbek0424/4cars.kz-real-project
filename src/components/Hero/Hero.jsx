@@ -5,11 +5,12 @@ import NavBar from '../NavBar/NavBar';
 const Hero = () => {
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full h-screen bg-hero" >
+            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-hero" >
                 <div className='container'>
                     <NavBar />
-                    <div className='mt-14'>
-                        <h1 className='font-body font-bold text-6xl flex flex-col text-white'>
+                    <div className='mt-14 px-4'>
+                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+                        2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
                             Интернет-магазин <span>шин и дисков</span>
                         </h1>
                     </div>

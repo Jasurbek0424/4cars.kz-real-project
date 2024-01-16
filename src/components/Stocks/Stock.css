@@ -1,0 +1,10 @@
+@media (max-width:640px) {
+    .stock__item {
+        flex-direction: column;
+    }
+
+    .stock__item-child {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

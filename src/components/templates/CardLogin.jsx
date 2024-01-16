@@ -28,11 +28,12 @@ const LoginForm = (props) => {
 
     return (
         <>
-            <div className='flex max-w-[1000px] rounded w-full mt-20 m-auto shadow-xl shadow-gray-500'>
+            <div className='flex max-w-[1000px] rounded w-full mt-14 m-auto shadow-xl shadow-gray-500 loginForm'>
                 <form action='' method='post' onSubmit={handleSubmit} className='max-w-[400px] w-full pt-10 px-12 flex flex-col gap-8'>
                     <div className='flex flex-col'>
                         <label className='mb-2' htmlFor="login">Логин:</label>
                         <input
+                            required name="login"
                             type="text"
                             id="login"
                             value={login}
@@ -44,6 +45,7 @@ const LoginForm = (props) => {
                         <label className='mb-2' htmlFor="password">Пароль:</label>
                         <div className='flex relative'>
                             <input
+                                required name="password"
                                 type={showPassword ? 'text' : 'password'}
                                 id="password"
                                 value={password}
@@ -53,7 +55,7 @@ const LoginForm = (props) => {
                             <button
                                 type="button"
                                 onClick={handleTogglePasswordVisibility}
-                                className='text-2xl text-gray-400 absolute right-2 top-1'
+                                className='text-2xl text-gray-400 absolute right-2 top-2'
                             >
                                 {showPassword ? <MdOutlineVisibilityOff /> : <MdOutlineVisibility />}
                             </button>
@@ -61,17 +63,17 @@ const LoginForm = (props) => {
                     </div>
                     <div className='flex items-center justify-between'>
                         <button className='bg-primary rounded px-4 py-1 active:bg-blue-700 text-white' type="submit">Войти</button>
-                        <button>
+                        <button className='text-primary underline' type='submit'>
                             Забыли пароль
                         </button>
                     </div>
                     <div className='flex justify-center'>
-                        <button onClick={props.click} className='text-primary underline text-lg border px-3 rounded border-primary'>
+                        <button onClick={props.click} className='text-primary underline text-lg border px-3 rounded border-primary mb-4'>
                             Зарегистрироваться
                         </button>
                     </div>
                 </form>
-                <img className='max-w-[600px] w-full rounded rounded-s-sm' src={LoginImg} alt='' />
+                <img className='max-w-[600px] w-full rounded rounded-s-sm loginImg' src={LoginImg} alt='' />
             </div>
         </>
     );

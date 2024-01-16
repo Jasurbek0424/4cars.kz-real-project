@@ -1,0 +1,31 @@
+@media (max-width:1536px) {
+    .blog__item {
+        width: 45%;
+    }
+}
+
+@media (max-width:1023px) {
+    .blog {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:767px) {
+    .blog__item h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:467px) {
+    .blog__contents {
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .blog__contents div {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

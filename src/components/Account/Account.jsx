@@ -12,6 +12,7 @@ import Footer from './../Footer/Footer';
 import Cart from './../templates/Cart';
 import MyCredits from './../templates/MyCredits';
 import EditAccount from '../templates/EditAccount';
+import './Account.css';
 
 const Account = () => {
 
@@ -47,19 +48,19 @@ const Account = () => {
             </header>
             <main>
                 <div className='container'>
-                    <section className='mt-20 mb-20 font-body flex justify-between'>
-                        <div className='max-w-[360px] border rounded shadow-xl flex flex-col px-8 items-center pb-10 relative'>
+                    <section className='mt-20 mb-20 font-body flex justify-between accountContent px-4'>
+                        <div className='max-w-[360px] w-full border rounded shadow-xl flex flex-col px-8 items-center pb-10 relative accontLeft'>
                             <img
                                 src={selectedImage}
                                 alt=''
                                 className=' rounded-full border object-cover bg-white -translate-y-14 
-                                h-44 max-w-[176px] '
+                                h-44 max-w-[176px] userIcon'
                             />
-                            <div className='-translate-y-6'>
-                                <p className='text-xl text-center'>Имя</p>
-                                <p className='text-xl text-center'>Фамилия</p>
+                            <div className='-translate-y-6 text-center 2xl:text-xl xl:text-xl lg:text-lg md:text-md sm:text-md text-sm'>
+                                <p className=''>Имя</p>
+                                <p className=''>Фамилия</p>
                             </div>
-                            <div className=' flex flex-col gap-6'>
+                            <div className=' flex flex-col gap-6 accountCategory'>
                                 <div className='flex items-center gap-3'>
                                     <GiBackwardTime className='text-primary text-3xl' />
                                     <button

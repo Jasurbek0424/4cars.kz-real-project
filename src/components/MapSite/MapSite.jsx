@@ -2,6 +2,7 @@
 import React from 'react';
 import NavBar from './../NavBar/NavBar';
 import Footer from './../Footer/Footer';
+import './MapSite.css';
 
 const MapSite = () => {
     return (
@@ -9,8 +10,9 @@ const MapSite = () => {
             <header className=" bg-no-repeat bg-cover bg-center w-full pb-10 bg-map" >
                 <div className='container '>
                     <NavBar />
-                    <div className='mt-28'>
-                        <h1 className='font-body font-bold text-6xl flex flex-col text-white'>
+                    <div className='mt-28 px-4'>
+                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+                        2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
                             Карта сайта
                         </h1>
                     </div>
@@ -18,9 +20,9 @@ const MapSite = () => {
             </header>
             <main>
                 <div className='container'>
-                    <section className='mt-40  mb-14 flex justify-between'>
-                        <div>
-                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                    <section className='mt-20  mb-14 flex flex-wrap gap-6 justify-between px-5'>
+                        <div className='site__mapItem'>
+                            <h2 className='font-body font-bold text-3xl text-primary mb-4'>
                                 Навигация
                             </h2>
                             <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
@@ -53,8 +55,8 @@ const MapSite = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                        <div className='site__mapItem'>
+                            <h2 className='font-body font-bold text-3xl text-primary mb-4'>
                                 Полезное
                             </h2>
                             <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
@@ -81,8 +83,8 @@ const MapSite = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                        <div className='site__mapItem'>
+                            <h2 className='font-body font-bold text-3xl text-primary mb-4'>
                                 Партнеры
                             </h2>
                             <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>
@@ -107,8 +109,8 @@ const MapSite = () => {
 
                             </ul>
                         </div>
-                        <div>
-                            <h2 className='font-body font-bold text-5xl text-primary mb-10'>
+                        <div className='site__mapItem'>
+                            <h2 className='font-body font-bold text-3xl text-primary mb-4'>
                                 Новое
                             </h2>
                             <ul className='flex flex-col gap-4 text-lg list-disc text-primary'>

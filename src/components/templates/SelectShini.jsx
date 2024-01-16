@@ -73,7 +73,7 @@ export default function FullWidthTabs() {
 
     return (
 
-        <Box sx={{ bgcolor: 'background.paper', width: 610 }}>
+        <Box sx={{ bgcolor: 'background.paper' }} className='selectProduct'>
             <AppBar position="static">
                 <Tabs
                     value={value}
@@ -93,12 +93,12 @@ export default function FullWidthTabs() {
                 onChangeIndex={handleChangeIndex}
             >
                 <TabPanel className="bg-blue-900" value={value} index={0} dir={theme.direction}>
-                    <div className="h-64 relative">
+                    <div className=" relative -z-0">
                         <h2 className="text-white text-lg font-bold font-body">
                             Типы размер
                         </h2>
                         <div className='flex flex-col gap-5'>
-                            <div className="flex gap-2 text-white">
+                            <div className="flex flex-wrap gap-2 text-white ">
                                 <div>
                                     <p>
                                         Ширина
@@ -131,7 +131,7 @@ export default function FullWidthTabs() {
                                 </div>
 
                             </div>
-                            <div className='flex items-center gap-4'>
+                            <div className='flex items-center gap-4 sire'>
                                 <div>
                                     <p className='text-white pb-1'>Производитель</p>
                                     <select className='border border-black'>
@@ -162,21 +162,21 @@ export default function FullWidthTabs() {
                                 </div>
                             </div>
                             <div className='flex gap-5 cursor-pointer'>
-                                <input type='checkbox' id='check' />
-                                <label className='cursor-pointer text-white' htmlFor='check' >Только в наличии</label>
+                                <input type='checkbox' id='checkshini' />
+                                <label className='cursor-pointer text-white' htmlFor='checkshini' >Только в наличии</label>
                             </div>
                             <div className='flex gap-4'>
                                 <button className='btn bg-white text-cm px-2 active:bg-blue-300' type='submit'>
                                     Подобрать
                                 </button>
-                                <button className=' border-b-white border-b-2 text-white'>
+                                <button className=' border-b-white border-b-2 text-white bg-darkPrimary'>
                                     Сбросить
                                 </button>
                             </div>
                             <img
                                 src={Shina}
                                 alt='Shina'
-                                className='absolute w-52 -bottom-4 -right-3'
+                                className='absolute 2xl:w-52 xl:w-52 lg:w-48 md:w-44 sm:w-40 w-40 -bottom-4 -right-3 -z-10'
                             />
                         </div>
                     </div>
@@ -189,11 +189,10 @@ export default function FullWidthTabs() {
                                     Сезон
                                 </p>
                                 <Autocomplete
-                                    className='bg-white rounded outline-none'
+                                    className='bg-white rounded outline-none autocomplete'
                                     disablePortal
                                     id="combo-box-demo"
                                     options={Seasons}
-                                    sx={{ width: 350 }}
                                     renderInput={(params) => <TextField {...params} label="Seasons" />}
                                 />
                             </div>

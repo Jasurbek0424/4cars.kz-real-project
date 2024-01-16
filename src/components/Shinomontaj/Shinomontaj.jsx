@@ -7,29 +7,31 @@ import Footer from './../Footer/Footer';
 const Shinomontaj = () => {
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full h-screen bg-contact" >
+            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-contact" >
                 <div className='container '>
                     <NavBar />
-                    <div className='mt-28'>
-                        <h1 className='font-body font-bold text-6xl flex flex-col text-white'>
+                    <div className='mt-28 px-4'>
+                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+                        2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
                             Шиномонтаж
                         </h1>
                     </div>
                 </div>
             </header>
-            <main className='mt-10 mb-20'>
+            <main className='mt-10 mb-16'>
                 <div className='container'>
-                    <section>
-                        <h2 className='text-5xl max-w-[700px] font-semibold mb-8'>
+                    <section className='px-4'>
+                        <h2 className='2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl text-3xl max-w-[700px] font-semibold mb-8'>
                             Cкидка на шиномонтаж в Алматы
                         </h2>
-                        <p className='text-2xl mb-10 tracking-wide'>
+                        <p className='2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-md mb-10 tracking-wide'>
                             Интернет магазин 4car.kz не имеет собственного шиномонтажа вместо этого мы договорились с шиномонтажами, чтобы они предоставили скидку для вас.
                         </p>
-                        <p className='text-2xl mb-8 tracking-wide'>
+                        <p className='2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-md mb-8 tracking-wide'>
                             Для получения скидки необходимо прибрести шины или диски у нас и получить купон!
                         </p>
-                        <img className='max-w-[1140px] m-auto' src={Map} alt='' />
+                        <img className='max-w-[1140px] w-full
+                        2xl:block xl:block lg:hidden hidden mx-auto' src={Map} alt='' />
                     </section>
                 </div>
             </main>
