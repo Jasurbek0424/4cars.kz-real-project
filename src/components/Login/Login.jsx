@@ -5,6 +5,7 @@ import CardLogin from '../templates/CardLogin';
 import CardRegister from '../templates/CardRegister';
 import Footer from './../Footer/Footer';
 import './Login.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 
 
@@ -27,8 +28,15 @@ const Login = () => {
             <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
                 <div className='container '>
                     <NavBar />
+                    <div className='mt-28 px-4'>
+                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+                        2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
+                            Регистрация и Вход
+                        </h1>
+                    </div>
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='mb-20'>

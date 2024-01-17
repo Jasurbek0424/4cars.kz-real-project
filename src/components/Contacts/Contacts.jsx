@@ -8,6 +8,8 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Footer from '../Footer/Footer';
 import './Contact.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
+import CompanyInfoTable from '../templates/CompanyInfoTable';
 
 const Contacts = () => {
     return (
@@ -23,9 +25,10 @@ const Contacts = () => {
                     </div>
                 </div>
             </header>
-            <main className='mt-40'>
+            <ScrollToTop />
+            <main className='mt-20'>
                 <div className='container'>
-                    <section className='mb-16 w-full'>
+                    <section className='mb-14 w-full'>
                         <img className='contact__map' src={Map} alt='' />
                         <div className='bg-primary p-4'>
                             <div className='max-w-[1000px]  mx-auto flex justify-center -translate-y-1/2 text-center contact__info'>
@@ -49,7 +52,7 @@ const Contacts = () => {
                                     <h2 className='text-darkMain text-xl mb-4 font-semibold font-body'>
                                         Адрес
                                     </h2>
-                                    <a href='#!' className='leading-7'>
+                                    <a href='https://2gis.kz/almaty/firm/70000001040222127/76.914359%2C43.305155?m=76.91509%2C43.305034%2F18.43%2Fr%2F3.96' className='leading-7'>
                                         г. Алматы ул. Казыбаева, 270а
                                     </a>
                                 </div>
@@ -83,31 +86,12 @@ const Contacts = () => {
                             </div>
                         </div>
                     </section>
-                    <section className='text-center mb-20'>
+                    <section className='text-center mb-14 px-4'>
                         <h2 className='text-primary 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-2xl
-                        text-2xl text-center font-semibold mb-6'>
+                        text-xl text-center font-semibold mb-6'>
                             Реквизиты
                         </h2>
-                        <div className='flex flex-col gap-8 props'>
-                            <p className='text-3xl tracking-wide'>
-                                <span className='font-bold'>Наименование: </span> ТОО “ADAK W&T”
-                            </p>
-                            <p className='text-3xl tracking-wide'>
-                                <span className='font-bold'>ИИН: </span> 131240018078
-                            </p>
-                            <p className='text-3xl tracking-wide'>
-                                <span className='font-bold'>Юридический адрес: </span> Республика Казахстан, г. Алматы ул. Казыбаева, 270 а
-                            </p>
-                            <p className='text-3xl tracking-wide'>
-                                <span className='font-bold'>ИИК: </span> KZ086018771000401241
-                            </p>
-                            <p className='text-3xl tracking-wide'>
-                                <span className='font-bold'>Банк: </span>  АО «Народный Банк Казахстан»
-                            </p>
-                            <p className='text-3xl tracking-wide'>
-                                <span className='font-bold'>БИК Банка:</span> HSBKKZK
-                            </p>
-                        </div>
+                        <CompanyInfoTable />
                     </section>
                 </div>
             </main>

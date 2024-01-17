@@ -4,6 +4,7 @@ import NavBar from './../NavBar/NavBar';
 import PayDecor from '../../assets/payDecor.png';
 import payDecor2 from '../../assets/payDecor2.png';
 import Footer from './../Footer/Footer';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const Payment = () => {
     return (
@@ -16,15 +17,13 @@ const Payment = () => {
                         2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
                             Оплата и доставка
                         </h1>
-                        <p className='text-xl text-center mx-auto mt-3 text-white font-body tracking-wide max-w-[450px]'>
-                            Вы можете произвести оплату заказа любым удобным способом
-                        </p>
                     </div>
                 </div>
             </header>
+            <ScrollToTop />
             <main className='mt-10'>
                 <section>
-                    <div className='container px-4'>
+                    <div className='container px-8'>
                         <p className='2xl:text-xl xl:text-xl lg:text-lg md:text-md sm:text-md text-sm mb-6'>
                             Покупая товары в нашем интернет-магазине, Вы соглашаетесь с условиями Публичной оферты.
                         </p>
@@ -59,7 +58,7 @@ const Payment = () => {
 
                 </section>
                 <section className=''>
-                    <div className='container px-4'>
+                    <div className='container px-8'>
                         <h2 className='text-primary text-4xl mb-8 font-semibold'>
                             Доставка товара
                         </h2>
@@ -105,7 +104,7 @@ const Payment = () => {
                     />
                 </section>
                 <section className='mb-10'>
-                    <div className='container px-4'>
+                    <div className='container px-8'>
                         <h2 className='font-semibold text-primary 2xl:text-xl xl:text-xl lg:text-lg md:text-md sm:text-md text-sm mb-10'>
                             Отправка заказа осуществляется после оплаты заказа. Отправка осуществляется ТОЛЬКО в рабочие дни.
                         </h2>

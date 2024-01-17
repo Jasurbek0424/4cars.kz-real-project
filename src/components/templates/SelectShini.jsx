@@ -32,7 +32,7 @@ const SelectShini = () => {
                     </button>
                 </div>
                 <div className='w-full flex-col flex justify-center items-center bg-primary px-4'>
-                    {activeModal === 'modal1' && (<SetFilter img={Shina} />)}
+                    {activeModal === 'modal1' && (<SetFilter img={Shina} id={'shina'} />)}
                     {activeModal === 'modal2' && (<SearchByCar />)}
                 </div>
             </section>

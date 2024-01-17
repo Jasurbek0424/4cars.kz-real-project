@@ -1,0 +1,9 @@
+.app-container {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.app-container.loading {
+    opacity: 0;
+    pointer-events: none;
+}

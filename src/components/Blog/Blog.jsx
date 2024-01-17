@@ -8,6 +8,7 @@ import Blog3 from '../../assets/blog3.png';
 import Blog4 from '../../assets/blog4.jpg';
 import Footer from './../Footer/Footer';
 import './Blog.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const Blog = () => {
 
@@ -52,6 +53,7 @@ const Blog = () => {
                     </div>
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='blog mt-14 flex justify-center gap-6 mb-20'>

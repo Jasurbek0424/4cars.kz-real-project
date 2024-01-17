@@ -2,6 +2,7 @@
 import React from 'react';
 import NavBar from './../NavBar/NavBar';
 import Footer from '../Footer/Footer';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const Change = () => {
     return (
@@ -11,12 +12,13 @@ const Change = () => {
                     <NavBar />
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='mt-10 font-body px-4'>
-                        <h2 className='text-center  font-bold text-darkMain 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-xl mb-8'>
+                        <h1 className='text-center  font-bold text-darkMain 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-xl mb-8'>
                             Возврат и обмен
-                        </h2>
+                        </h1>
                         <div className='mb-10'>
                             <h2 className='font-semibold 2xl:text-xl xl:text-xl lg:text-xl md:text-lg sm:text-md text-sm mb-5'>
                                 Внимание!

@@ -10,6 +10,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import Footer from './../Footer/Footer';
 import './Product.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 
 
@@ -54,13 +55,14 @@ const Product = () => {
                     <NavBar />
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='mt-14 font-body px-4'>
-                        <div className=' flex gap-5 ranking'>
-                            <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-md text-md font-body font-bold '>
+                        <div className=' flex gap-5 flex-col ranking'>
+                            <h1 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-md text-md font-body font-bold '>
                                 Шины BOTO <span>Genesys 208</span> <span>155/70</span> R12 73T
-                            </h2>
+                            </h1>
                             <div className='flex gap-6'>
                                 <Stack className='max-w-[120px]' spacing={1}>
                                     <Rating className='' name="half-rating" defaultValue={5} precision={0.5} />

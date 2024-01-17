@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import Partners from '../templates/Partners';
 import Footer from './../Footer/Footer';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const About = () => {
     return (
@@ -12,12 +13,13 @@ const About = () => {
                     <NavBar />
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='font-body text-center mt-10 mb-10 px-5'>
-                        <h2 className='font-bold text-darkMain mb-10 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-xl'>
+                        <h1 className='font-bold text-darkMain mb-10 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-xl'>
                             О компании
-                        </h2>
+                        </h1>
                         <p className='max-w-[1250px] m-auto text-justify tracking-wide 2xl:text-xl xl:text-xl lg:text-xl md:text-lg sm:text-md text-sm
                         flex flex-col gap-8 leading-10'>
                             Компания ТОО ADAK W&T (Интернет магазин www.4car.kz) работает на рынке с 2013 года. Основное направление деятельности компании – оптовая и розничная продажа автошин и дисков. У нас вы найдете широкий ассортимент легковых шин различных типоразмеров для любого класса автомобиля, начиная от легковых авто, заканчивая спецтехникой, а также грузового транспорта. В ассортименте представлены:

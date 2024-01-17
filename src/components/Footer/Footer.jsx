@@ -7,6 +7,8 @@ import Logo from '../../assets/logo.png'
 import './footer.css';
 
 const Footer = () => {
+
+
     return (
         <>
             <footer className='relative'>
@@ -64,7 +66,9 @@ const Footer = () => {
                                 Связаться с нами <FaAngleRight />
                             </button>
                         </form>
-                        <img className='2xl:max-w-[600px] xl:max-w-[500px] lg:max-w-[450px] md:max-w-[400px] sm:max-w-[350px] max-w-[300px] w-full' src={MapFrame} alt='' />
+                        <a href='https://2gis.kz/almaty/firm/70000001040222127/76.914359%2C43.305155?m=76.91509%2C43.305034%2F18.43%2Fr%2F3.96'>
+                            <img className='2xl:max-w-[600px] xl:max-w-[500px] lg:max-w-[450px] md:max-w-[400px] sm:max-w-[350px] max-w-[300px] w-full' src={MapFrame} alt='' />
+                        </a>
                     </div>
                 </div >
                 <div className='footer_navigate py-5'>
@@ -84,9 +88,6 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <a className='text-xl' href='/account'>Корзина</a>
-                                    </li>
-                                    <li>
-                                        <a className='text-xl' href='#!'>Список сравнения</a>
                                     </li>
                                 </ul>
                             </div>
@@ -111,7 +112,7 @@ const Footer = () => {
                                 <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Сервис</h2>
                                 <ul className='flex flex-col gap-4 footer__list'>
                                     <li>
-                                        <a className='text-xl' href='/product'>Условия кредита и
+                                        <a className='text-xl' href='/credit'>Условия кредита и
                                             рассрочки </a>
                                     </li>
                                     <li>
@@ -119,9 +120,6 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <a className='text-xl' href='/about'>О компании </a>
-                                    </li>
-                                    <li>
-                                        <a className='text-xl' href='#!'>Список желаний</a>
                                     </li>
                                 </ul>
                             </div>

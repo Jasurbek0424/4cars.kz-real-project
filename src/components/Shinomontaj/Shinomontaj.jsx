@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from './../NavBar/NavBar';
 import Map from '../../assets/Map.png'
 import Footer from './../Footer/Footer';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const Shinomontaj = () => {
     return (
@@ -18,6 +19,7 @@ const Shinomontaj = () => {
                     </div>
                 </div>
             </header>
+            <ScrollToTop />
             <main className='mt-10 mb-16'>
                 <div className='container'>
                     <section className='px-4'>

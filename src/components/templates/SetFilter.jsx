@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
@@ -77,8 +78,8 @@ const SetFilter = (props) => {
                         </div>
                     </div>
                     <div className='flex gap-5 cursor-pointer'>
-                        <input type='checkbox' id='checkshini' />
-                        <label className='cursor-pointer text-white' htmlFor='checkshini' >Только в наличии</label>
+                        <input type='checkbox' id={props.id} />
+                        <label className='cursor-pointer text-white' htmlFor={props.id} >Только в наличии</label>
                     </div>
                     <div className='flex gap-4'>
                         <button className='btn bg-white text-cm px-2 active:bg-blue-300' type='submit'>

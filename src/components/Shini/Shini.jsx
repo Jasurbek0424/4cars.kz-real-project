@@ -11,6 +11,7 @@ import CardShini from '../templates/Cards';
 import Complect from '../../assets/complect.png';
 import Footer from './../Footer/Footer';
 import './Shini.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 function valuetext(value) {
     return `${value}`;
@@ -68,7 +69,8 @@ const Shini = () => {
                     </div>
                 </div>
             </header>
-            <main className='mt-20'>
+            <ScrollToTop />
+            <main className='mt-10'>
                 <div className='container flex flex-col items-center'>
                     <section className='2xl:mb-28 mb-10  px-4'>
                         <h2 className='font-bold text-2xl mb-8 2xl:text-start xl:text-start text-center'>

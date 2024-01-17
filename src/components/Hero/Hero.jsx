@@ -1,8 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const Hero = () => {
+
+
     return (
         <>
             <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-hero" >
@@ -16,6 +19,7 @@ const Hero = () => {
                     </div>
                 </div>
             </header >
+            <ScrollToTop />
         </>
     );
 };

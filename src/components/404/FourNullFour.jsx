@@ -4,6 +4,7 @@ import NavBar from '../NavBar/NavBar';
 import Null from '../../assets/Diska.png';
 import Footer from '../Footer/Footer';
 import './FourNullFour.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const FourNullFour = () => {
     return (
@@ -25,6 +26,7 @@ const FourNullFour = () => {
                         </div>
                     </div>
                 </div>
+                <ScrollToTop />
             </header>
             <footer>
                 <Footer />

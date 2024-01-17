@@ -6,6 +6,7 @@ import Diski from '../../assets/cardDiski.png';
 import Footer from '../Footer/Footer';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const SearchDiski = () => {
     const diska = [
@@ -42,12 +43,13 @@ const SearchDiski = () => {
                     <NavBar />
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='mt-10 mb-20'>
-                        <h2 className='text-2xl font-body mb-10 px-4'>
+                        <h1 className='text-2xl font-body mb-10 px-4'>
                             Результаты по запросу xxx
-                        </h2>
+                        </h1>
                         <div className=' max-w-[1200px] w-full m-auto flex flex-wrap gap-6 justify-center flex-col items-center px-4'>
                             <div className='flex gap-2 flex-wrap w-full justify-center'>
                                 {visibleProducts.map((e) => (

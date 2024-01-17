@@ -11,6 +11,7 @@ const Hits = () => {
         { id: 1, img: Xit1, type: 'Шины Cordiant Road Runner 185/70 R14 88H' },
         { id: 2, img: Xit2, type: 'Шины Cordiant Road Runner 185/70 R14 88H' },
         { id: 3, img: Xit3, type: 'Шины Cordiant Road Runner 185/70 R14 88H' },
+        { id: 4, img: Xit1, type: 'Шины Cordiant Road Runner 185/70 R14 88H' },
     ]
     return (
         <>

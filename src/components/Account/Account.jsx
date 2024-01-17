@@ -13,6 +13,7 @@ import Cart from './../templates/Cart';
 import MyCredits from './../templates/MyCredits';
 import EditAccount from '../templates/EditAccount';
 import './Account.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const Account = () => {
 
@@ -44,8 +45,15 @@ const Account = () => {
             <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
                 <div className='container '>
                     <NavBar />
+                    <div className='mt-28 px-4'>
+                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+                        2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
+                            Личный кабинет
+                        </h1>
+                    </div>
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='mt-20 mb-20 font-body flex justify-between accountContent px-4'>

@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from './../NavBar/NavBar';
 import Footer from './../Footer/Footer';
 import './MapSite.css';
+import ScrollToTop from './../ScrollToTop/ScrollToTop';
 
 const MapSite = () => {
     return (
@@ -18,6 +19,7 @@ const MapSite = () => {
                     </div>
                 </div>
             </header>
+            <ScrollToTop />
             <main>
                 <div className='container'>
                     <section className='mt-20  mb-14 flex flex-wrap gap-6 justify-between px-5'>
