@@ -10,9 +10,9 @@ const SetFilter = (props) => {
     return (
         <>
             <div className=" relative -z-0 py-4 max-w-[600px] w-full">
-                <h2 className="text-white text-lg font-bold font-body">
+                <p className="text-white text-lg font-bold font-body">
                     Типы размер
-                </h2>
+                </p>
                 <div className='flex flex-col gap-5'>
                     <div className="flex flex-wrap gap-2 text-white ">
                         <div>
@@ -85,7 +85,7 @@ const SetFilter = (props) => {
                         <button className='btn bg-white text-cm px-2 active:bg-blue-300' type='submit'>
                             Подобрать
                         </button>
-                        <button className=' border-b-white border-b-2 text-white bg-primary'>
+                        <button type='reset' className=' border-b-white border-b-2 text-white bg-primary'>
                             Сбросить
                         </button>
                     </div>
@@ -93,7 +93,7 @@ const SetFilter = (props) => {
                         // eslint-disable-next-line react/prop-types
                         src={props.img}
                         alt='Shina'
-                        className='absolute 2xl:w-52 xl:w-52 lg:w-48 md:w-44 sm:w-40 w-40 bottom-0 -right-3 -z-10'
+                        className='absolute 2xl:w-50 xl:w-50 lg:w-48 md:w-44 sm:w-40 w-40 bottom-1 -right-3 -z-10'
                     />
                 </div>
             </div>

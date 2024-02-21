@@ -42,55 +42,64 @@ const Blog = () => {
 
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
-                <div className='container '>
-                    <NavBar />
-                    <div className='mt-28 px-4'>
-                        <h1 className=' font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+            <div className='overflow-hidden'>
+                <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
+                    <div className='container '>
+                        <NavBar />
+                        <div className='mt-28 px-4' data-aos="fade-right">
+                            <h1 className=' font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
                         2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
-                            Блог
-                        </h1>
-                    </div>
-                </div>
-            </header>
-            <ScrollToTop />
-            <main>
-                <div className='container'>
-                    <section className='blog mt-14 flex justify-center gap-6 mb-20'>
-                        <div className='max-w-[650px] w-full px-4'>
-                            <img className='mb-6' src={BlogImg} alt='' />
-                            <div className='text-darkMain font-body max-w-[600px] flex flex-col gap-4'>
-                                <span className=''>
-                                    {formattedDate}
-                                </span>
-                                <h2 className='font-semibold 
-                                2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md blog__title'>
-                                    Что нужно знать про шины Boto?
-                                </h2>
-                                <p className='2xl:text-lg xl:text-lg lg:text-lg md:text-md sm:text-sm text-sm text-justify'>
-                                    Автомобилисты, Вы уже видели? Кто это тут у нас? Новички всегда подвергаются пристальному вниманию! Так и шины Boto – уверенно ворвались на прилавки, да еще и с громкими заявлениями, мол «Вы нас полюбите!».
-                                </p>
-                            </div>
+                                Блог
+                            </h1>
                         </div>
-                        <div className='flex flex-wrap justify-center gap-5 blog__contents'>
-                            {blogs.map(e => (
-                                <div key={e.id} className='blog__item flex flex-col gap-3 max-w-[380px]'>
-                                    <img src={e.img} alt='' className='max-h-[295px] h-full' />
-                                    <span>
+                    </div>
+                </header>
+                <ScrollToTop />
+                <main>
+                    <div className='container'>
+                        <section className='blog mt-14 flex justify-center gap-6 mb-20'>
+                            <div
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="center-bottom"
+                                className='max-w-[650px] w-full px-4'>
+                                <img className='mb-6' src={BlogImg} alt='' />
+                                <div className='text-darkMain font-body max-w-[600px] flex flex-col gap-4'>
+                                    <span className=''>
                                         {formattedDate}
                                     </span>
-                                    <h2 className='text-xl tracking-wide font-semibold'>
-                                        {e.context}
-                                    </h2>
+                                    <p className='font-semibold 
+                                2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-md blog__title'>
+                                        Что нужно знать про шины Boto?
+                                    </p>
+                                    <p className='2xl:text-lg xl:text-lg lg:text-lg md:text-md sm:text-sm text-sm text-justify'>
+                                        Автомобилисты, Вы уже видели? Кто это тут у нас? Новички всегда подвергаются пристальному вниманию! Так и шины Boto – уверенно ворвались на прилавки, да еще и с громкими заявлениями, мол «Вы нас полюбите!».
+                                    </p>
                                 </div>
-                            ))}
-                        </div>
-                    </section>
-                </div>
-            </main>
-            <footer>
-                <Footer />
-            </footer>
+                            </div>
+                            <div className='flex flex-wrap justify-center gap-5 blog__contents'>
+                                {blogs.map(e => (
+                                    <div
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        key={e.id}
+                                        className='blog__item flex flex-col gap-3 max-w-[380px]'>
+                                        <img src={e.img} alt='' className='max-h-[295px] h-full' />
+                                        <span>
+                                            {formattedDate}
+                                        </span>
+                                        <h2 className='text-xl tracking-wide font-semibold'>
+                                            {e.context}
+                                        </h2>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
         </>
     );
 };

@@ -23,8 +23,18 @@ import Product from './components/Product/Product';
 import Credit from './components/Credit/Credit';
 import FourNullFour from './components/404/FourNullFour';
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import Brands from './components/templates/Brands';
+import BrandPage from './components/templates/BrandPage';
+import NewsPage from './components/templates/NewsPage';
+
 const App = () => {
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   useEffect(() => {
     const simulateLoading = () => {
@@ -50,6 +60,7 @@ const App = () => {
             <Route path="/rims" element={<Diski />} />
             <Route path="/delivery" element={<Payment />} />
             <Route path="/news" element={<Stocks />} />
+            <Route path="/news/:id" element={<NewsPage />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/shinomontazh" element={<Shinomontaj />} />
             <Route path="/sitemap" element={<MapSite />} />
@@ -61,6 +72,8 @@ const App = () => {
             <Route path="/account" element={<Account />} />
             <Route path="/product" element={<Product />} />
             <Route path="/credit" element={<Credit />} />
+            <Route path="/partners" element={<Brands />} />
+            <Route path="/partners/:id" element={<BrandPage />} />
             <Route path="*" element={<FourNullFour />} />
           </Routes>
         </>

@@ -42,96 +42,102 @@ const Account = () => {
 
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
-                <div className='container '>
-                    <NavBar />
-                    <div className='mt-28 px-4'>
-                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+            <div className='overflow-hidden'>
+                <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
+                    <div className='container '>
+                        <NavBar />
+                        <div className='mt-28 px-4' data-aos="fade-right">
+                            <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
                         2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
-                            Личный кабинет
-                        </h1>
+                                Личный кабинет
+                            </h1>
+                        </div>
                     </div>
-                </div>
-            </header>
-            <ScrollToTop />
-            <main>
-                <div className='container'>
-                    <section className='mt-20 mb-20 font-body flex justify-between accountContent px-4'>
-                        <div className='max-w-[360px] w-full border rounded shadow-xl flex flex-col px-8 items-center pb-10 relative accontLeft'>
-                            <img
-                                src={selectedImage}
-                                alt=''
-                                className=' rounded-full border object-cover bg-white -translate-y-14 
+                </header>
+                <ScrollToTop />
+                <main>
+                    <div className='container'>
+                        <section className='mt-20 mb-20 font-body flex justify-between accountContent px-4'>
+                            <div
+                                data-aos="fade-right"
+                                className='max-w-[360px] w-full border rounded shadow-xl flex flex-col px-8 items-center pb-10 relative accontLeft'>
+                                <img
+                                    src={selectedImage}
+                                    alt=''
+                                    className=' rounded-full border object-cover bg-white -translate-y-14 
                                 h-44 max-w-[176px] userIcon'
-                            />
-                            <div className='-translate-y-6 text-center 2xl:text-xl xl:text-xl lg:text-lg md:text-md sm:text-md text-sm'>
-                                <p className=''>Имя</p>
-                                <p className=''>Фамилия</p>
+                                />
+                                <div className='-translate-y-6 text-center 2xl:text-xl xl:text-xl lg:text-lg md:text-md sm:text-md text-sm'>
+                                    <p className=''>Имя</p>
+                                    <p className=''>Фамилия</p>
+                                </div>
+                                <div className=' flex flex-col gap-6 accountCategory'>
+                                    <div className='flex items-center gap-3'>
+                                        <GiBackwardTime className='text-primary text-3xl' />
+                                        <button
+                                            onClick={() => openModal('modal1')}
+                                            className='flex items-center max-w-[220px] text-darkMain
+                                    border-b border-primary focus:bg-primary rounded focus:text-white 
+                                    px-2 w-full justify-between'
+                                            type='submit'>
+                                            История заказов
+                                            <FaAngleRight />
+                                        </button>
+                                    </div>
+                                    <div className='flex items-center gap-3'>
+                                        <PiShoppingCart className='text-primary text-3xl' />
+                                        <button
+                                            onClick={() => openModal('modal2')}
+                                            className='flex items-center max-w-[220px] text-darkMain
+                                    border-b border-primary focus:bg-primary rounded focus:text-white 
+                                    px-2 w-full justify-between'
+                                            type='submit'>
+                                            Корзина
+                                            <FaAngleRight />
+                                        </button>
+                                    </div>
+                                    <div className='flex items-center gap-3'>
+                                        <CiCreditCard1 className='text-primary text-3xl' />
+                                        <button
+                                            onClick={() => openModal('modal3')}
+                                            className='flex items-center max-w-[220px] text-darkMain
+                                    border-b border-primary focus:bg-primary rounded focus:text-white 
+                                    px-2 w-full justify-between'
+                                            type='submit'>
+                                            Мои карты
+                                            <FaAngleRight />
+                                        </button>
+                                    </div>
+                                    <div className='flex items-center gap-3'>
+                                        <IoSettingsOutline className='text-primary text-3xl' />
+                                        <button
+                                            onClick={() => openModal('modal4')}
+                                            className='flex items-center max-w-[220px] text-darkMain
+                                    border-b border-primary focus:bg-primary rounded focus:text-white 
+                                    px-2 w-full justify-between'
+                                            type='submit'>
+                                            Настройки аккаунта
+                                            <FaAngleRight />
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div className=' flex flex-col gap-6 accountCategory'>
-                                <div className='flex items-center gap-3'>
-                                    <GiBackwardTime className='text-primary text-3xl' />
-                                    <button
-                                        onClick={() => openModal('modal1')}
-                                        className='flex items-center max-w-[220px] text-darkMain
-                                    border-b border-primary focus:bg-primary rounded focus:text-white 
-                                    px-2 w-full justify-between'
-                                        type='submit'>
-                                        История заказов
-                                        <FaAngleRight />
-                                    </button>
-                                </div>
-                                <div className='flex items-center gap-3'>
-                                    <PiShoppingCart className='text-primary text-3xl' />
-                                    <button
-                                        onClick={() => openModal('modal2')}
-                                        className='flex items-center max-w-[220px] text-darkMain
-                                    border-b border-primary focus:bg-primary rounded focus:text-white 
-                                    px-2 w-full justify-between'
-                                        type='submit'>
-                                        Корзина
-                                        <FaAngleRight />
-                                    </button>
-                                </div>
-                                <div className='flex items-center gap-3'>
-                                    <CiCreditCard1 className='text-primary text-3xl' />
-                                    <button
-                                        onClick={() => openModal('modal3')}
-                                        className='flex items-center max-w-[220px] text-darkMain
-                                    border-b border-primary focus:bg-primary rounded focus:text-white 
-                                    px-2 w-full justify-between'
-                                        type='submit'>
-                                        Мои карты
-                                        <FaAngleRight />
-                                    </button>
-                                </div>
-                                <div className='flex items-center gap-3'>
-                                    <IoSettingsOutline className='text-primary text-3xl' />
-                                    <button
-                                        onClick={() => openModal('modal4')}
-                                        className='flex items-center max-w-[220px] text-darkMain
-                                    border-b border-primary focus:bg-primary rounded focus:text-white 
-                                    px-2 w-full justify-between'
-                                        type='submit'>
-                                        Настройки аккаунта
-                                        <FaAngleRight />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='border max-w-[1100px] w-full flex-col flex justify-center items-center pb-8'>
-                            {activeModal === 'modal1' && (<History />)}
-                            {activeModal === 'modal2' && (<Cart />)}
-                            {activeModal === 'modal3' && (<MyCredits />)}
-                            {activeModal === 'modal4' && (<EditAccount myFunc={handleImageChange} imgSelect={selectedImage} />)}
+                            <div
+                                data-aos="fade-left"
+                                className='border max-w-[1100px] w-full flex-col flex justify-center items-center pb-8'>
+                                {activeModal === 'modal1' && (<History />)}
+                                {activeModal === 'modal2' && (<Cart />)}
+                                {activeModal === 'modal3' && (<MyCredits />)}
+                                {activeModal === 'modal4' && (<EditAccount myFunc={handleImageChange} imgSelect={selectedImage} />)}
 
-                        </div>
-                    </section>
-                </div>
-            </main>
-            <footer>
-                <Footer />
-            </footer>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
         </>
     );
 };

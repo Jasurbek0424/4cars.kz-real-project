@@ -154,21 +154,21 @@ const NavBar = () => {
                             <div>
                                 <div className='flex '>
                                     <div className='flex flex-col items-center w-24 text-center'>
-                                        <div className='bg-primary nav__icon h-9 w-9 flex items-center justify-center rounded-full'>
-                                            <SlUser className='' />
-                                        </div>
-                                        <a href='/account' className='media__link text-xs'>
+                                        <a href='/account' className='media__link flex flex-col items-center'>
+                                            <span className='bg-primary nav__icon h-9 w-9 flex items-center justify-center rounded-full'>
+                                                <SlUser className='' />
+                                            </span>
                                             Личный кабинет
                                         </a>
                                     </div>
                                     <div className='flex flex-col  items-center w-24 text-center'>
-                                        <div className='bg-primary nav__icon relative h-9 w-9 flex items-center justify-center rounded-full'>
-                                            <PiShoppingCart />
-                                            <span className=' text-xs px-1 absolute -top-1 -right-2 counter rounded-full bg-primary'>
-                                                0
+                                        <a href='#!' className='media__link flex flex-col items-center cursor-pointer '>
+                                            <span className='bg-primary nav__icon relative h-9 w-9 flex items-center justify-center rounded-full'>
+                                                <PiShoppingCart />
+                                                <span className=' text-xs px-1 absolute -top-1 -right-2 counter rounded-full bg-primary'>
+                                                    0
+                                                </span>
                                             </span>
-                                        </div>
-                                        <a href='#!' className='media__link text-xs flex flex-col'>
                                             Корзина <span>0 T</span>
                                         </a>
                                     </div>
@@ -194,7 +194,7 @@ const NavBar = () => {
                         </button>
                     </form>
 
-                    <ul className={`navbar ${isFixed ? 'fixed bg-primary flex justify-evenly flex-wrap gap-2  w-full mx-auto py-6 px-2'
+                    <ul className={`navbar ${isFixed ? 'fixed bg-primary flex justify-evenly flex-wrap gap-2 w-full mx-auto py-6 px-2'
                         : 'flex justify-around flex-wrap gap-2 max-w-[950px]  w-full mx-auto py-3 px-2 bg-white rounded-md list'
                         }`}>
                         <li>

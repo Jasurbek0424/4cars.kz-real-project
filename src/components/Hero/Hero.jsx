@@ -10,8 +10,10 @@ const Hero = () => {
         <>
             <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-hero" >
                 <div className='container'>
-                    <NavBar />
-                    <div className='mt-14 px-4'>
+                    <div >
+                        <NavBar />
+                    </div>
+                    <div className='mt-14 px-4' data-aos="fade-right">
                         <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
                         2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
                             Интернет-магазин <span>шин и дисков</span>

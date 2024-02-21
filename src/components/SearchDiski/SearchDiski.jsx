@@ -38,44 +38,50 @@ const SearchDiski = () => {
     const visibleProducts = diska.slice(startIndex, endIndex);
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
-                <div className='container '>
-                    <NavBar />
-                </div>
-            </header>
-            <ScrollToTop />
-            <main>
-                <div className='container'>
-                    <section className='mt-10 mb-20'>
-                        <h1 className='text-2xl font-body mb-10 px-4'>
-                            Результаты по запросу xxx
-                        </h1>
-                        <div className=' max-w-[1200px] w-full m-auto flex flex-wrap gap-6 justify-center flex-col items-center px-4'>
-                            <div className='flex gap-2 flex-wrap w-full justify-center'>
-                                {visibleProducts.map((e) => (
-                                    <CardDiski
-                                        key={e.id}
-                                        img={e.img}
-                                        type={e.type}
-                                        price={e.price}
-                                        text={e.character}
+            <div className='overflow-hidden'>
+                <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
+                    <div className='container '>
+                        <NavBar />
+                    </div>
+                </header>
+                <ScrollToTop />
+                <main>
+                    <div className='container'>
+                        <section className='mt-10 mb-20'>
+                            <h1
+                                data-aos="fade-right"
+                                className='text-2xl font-body mb-10 px-4'>
+                                Результаты по запросу xxx
+                            </h1>
+                            <div className=' max-w-[1200px] w-full m-auto flex flex-wrap gap-6 justify-center flex-col items-center px-4'>
+                                <div
+                                    data-aos="zoom-out-up"
+                                    className='flex gap-2 flex-wrap w-full justify-center'>
+                                    {visibleProducts.map((e) => (
+                                        <CardDiski
+                                            key={e.id}
+                                            img={e.img}
+                                            type={e.type}
+                                            price={e.price}
+                                            text={e.character}
+                                        />
+                                    ))}
+                                </div>
+                                <Stack spacing={2} sx={{ mt: 2 }}>
+                                    <Pagination
+                                        count={totalPages}
+                                        page={page}
+                                        onChange={handleChangePage}
                                     />
-                                ))}
+                                </Stack>
                             </div>
-                            <Stack spacing={2} sx={{ mt: 2 }}>
-                                <Pagination
-                                    count={totalPages}
-                                    page={page}
-                                    onChange={handleChangePage}
-                                />
-                            </Stack>
-                        </div>
-                    </section>
-                </div>
-            </main>
-            <footer>
-                <Footer />
-            </footer>
+                        </section>
+                    </div>
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
         </>
     );
 };

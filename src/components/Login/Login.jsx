@@ -25,38 +25,40 @@ const Login = () => {
     };
     return (
         <>
-            <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
-                <div className='container '>
-                    <NavBar />
-                    <div className='mt-28 px-4'>
-                        <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
+            <div className='overflow-hidden'>
+                <header className=" bg-no-repeat bg-cover bg-center w-full pb-20 bg-map" >
+                    <div className='container '>
+                        <NavBar />
+                        <div className='mt-28 px-4' data-aos="fade-right">
+                            <h1 className='font-body font-bold 2xl:text-6xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl 
                         2xl:text-start xl:text-start lg:text-start text-center flex flex-col text-white'>
-                            Регистрация и Вход
-                        </h1>
+                                Регистрация и Вход
+                            </h1>
+                        </div>
                     </div>
-                </div>
-            </header>
-            <ScrollToTop />
-            <main>
-                <div className='container'>
-                    <section className='mb-20'>
-                        {isLoginVisible && (
-                            <div>
-                                <CardLogin click={showRegistrationForm} />
+                </header>
+                <ScrollToTop />
+                <main>
+                    <div className='container'>
+                        <section className='mb-20'>
+                            {isLoginVisible && (
+                                <div data-aos="zoom-out-up">
+                                    <CardLogin click={showRegistrationForm} />
 
-                            </div>
-                        )}
-                        {isRegistrationVisible && (
-                            <div>
-                                <CardRegister click={showLoginForm} />
-                            </div>
-                        )}
-                    </section>
-                </div >
-            </main>
-            <footer>
-                <Footer />
-            </footer>
+                                </div>
+                            )}
+                            {isRegistrationVisible && (
+                                <div data-aos="zoom-out-up">
+                                    <CardRegister click={showLoginForm} />
+                                </div>
+                            )}
+                        </section>
+                    </div >
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
         </>
     );
 };

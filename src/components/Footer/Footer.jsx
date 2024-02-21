@@ -14,12 +14,14 @@ const Footer = () => {
             <footer className='relative'>
                 <div className='container font-bold'>
                     <div className='flex items-center justify-center max-w-[1260px] w-full m-auto gap-5 mb-36 px-5 footer__form'>
-                        <form action='' method='post' className='text-darkMain py-2 flex flex-col justify-between 
+                        <form
+
+                            action='' method='post' className='text-darkMain py-2 flex flex-col justify-between 
                         2xl:max-w-[600px] xl:max-w-[500px] lg:max-w-[450px] md:max-w-[400px] sm:max-w-[350px] max-w-[300px]
                         w-full'>
-                            <h1 className=' leading-[72px] font-semibold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-xl'>
+                            <h4 className=' leading-[72px] font-semibold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-xl'>
                                 Свяжитесь с нами
-                            </h1>
+                            </h4>
                             <p className='2xl:text-xl xl:text-xl lg:text-xl md:text-lg sm:text-lg text-md leading-10'>
                                 Свяжитесь с нами для получения ценового предложения, помогите им присоединиться к нашей команде
                             </p>
@@ -66,7 +68,8 @@ const Footer = () => {
                                 Связаться с нами <FaAngleRight />
                             </button>
                         </form>
-                        <a href='https://2gis.kz/almaty/firm/70000001040222127/76.914359%2C43.305155?m=76.91509%2C43.305034%2F18.43%2Fr%2F3.96'>
+                        <a
+                            href='https://2gis.kz/almaty/firm/70000001040222127/76.914359%2C43.305155?m=76.91509%2C43.305034%2F18.43%2Fr%2F3.96'>
                             <img className='2xl:max-w-[600px] xl:max-w-[500px] lg:max-w-[450px] md:max-w-[400px] sm:max-w-[350px] max-w-[300px] w-full' src={MapFrame} alt='' />
                         </a>
                     </div>
@@ -75,7 +78,7 @@ const Footer = () => {
                     <div className='container'>
                         <div className='pb-10 flex flex-wrap gap-5 justify-between items-start text-white px-5 '>
                             <div className='flex flex-col footer__content gap-6'>
-                                <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Информация</h2>
+                                <p className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Информация</p>
                                 <ul className='flex flex-col gap-4 footer__list'>
                                     <li>
                                         <a className='text-xl' href='/sitemap'>Карта сайта </a>
@@ -92,7 +95,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className='flex flex-col footer__content gap-6'>
-                                <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Полезное</h2>
+                                <p className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Полезное</p>
                                 <ul className='flex flex-col gap-4 footer__list'>
                                     <li>
                                         <a className='text-xl' href='/contacts'>Контакты </a>
@@ -109,7 +112,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className='flex flex-col footer__content gap-6 max-w-[250px]'>
-                                <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Сервис</h2>
+                                <p className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Сервис</p>
                                 <ul className='flex flex-col gap-4 footer__list'>
                                     <li>
                                         <a className='text-xl' href='/credit'>Условия кредита и
@@ -124,7 +127,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className='flex flex-col footer__content gap-6'>
-                                <h2 className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Личный кабинет</h2>
+                                <p className='2xl:text-3xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-lg font-bold'>Личный кабинет</p>
                                 <ul className='flex flex-col gap-4 footer__list'>
                                     <li>
                                         <a className='text-xl' href='/account'>Личный кабинет </a>
@@ -138,14 +141,12 @@ const Footer = () => {
                                     <li>
                                         <a className='text-xl' href='/account'>Последние</a>
                                     </li>
-                                    <li>
-                                        <a className='text-xl' href='/shinomontazh'>Шиномонтаж</a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
                         <a href=''>
-                            <img className='m-auto' src={Logo} alt='' />
+                            <img className='mx-auto max-w-[150px] w-full' src={Logo} alt='' />
                         </a>
                     </div>
                 </div>

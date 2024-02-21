@@ -22,7 +22,7 @@ const ProductModal2 = () => {
 
     if (!shina || !Array.isArray(shina) || shina.length === 0) {
         // Проверка наличия массива products
-        return <div>No products available</div>;
+        return <div>Продукты не найдены!</div>;
     }
 
     const itemsPerPage = 6; // Установите начальное количество товаров на странице

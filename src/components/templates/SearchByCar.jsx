@@ -38,7 +38,7 @@ const SearchByCar = () => {
                         <button className='btn bg-white text-cm px-2 active:bg-blue-300' type='submit'>
                             Подобрать
                         </button>
-                        <button className=' border-b-white border-b-2 text-white'>
+                        <button type='reset' className=' border-b-white border-b-2 text-white'>
                             Сбросить
                         </button>
                     </div>

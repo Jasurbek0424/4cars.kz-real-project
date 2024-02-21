@@ -1,22 +1,34 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-// import Pagination from '@mui/material/Pagination';
-// import Stack from '@mui/material/Stack';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function CardShini(props) {
+
     const products = props
 
+    const navigate = useNavigate()
+    const handleDivClick = () => {
+        navigate('/product');
+        window.scrollTo({
+            top: 0,
 
+        });
+    };
 
     return (
         <>
-            <div className='card__item 2xl:max-w-[210px] xl:max-w-[205px] lg:max-w-[200px] md:max-w-[185px] sm:max-w-[200px] max-w-[170px]
+            <div
+                onClick={handleDivClick}
+                className='card__item cursor-pointer 2xl:max-w-[210px] xl:max-w-[205px] lg:max-w-[200px] md:max-w-[185px] sm:max-w-[200px] max-w-[170px]
             2xl:max-h-[305px] xl:max-h-[305px] lg:max-h-[275px] md:max-h-[305px] sm:max-h-[255px] max-h-[285px]
              font-body w-full text-center text-white rounded'>
                 <div className='blockImg'>
                     <img className='2xl:max-w-[110px] xl:max-w-[100px] lg:max-w-[85px] max-w-[75px] 
-                2xl:max-h-[140px] xl:max-h-[130px] lg:max-h-[120px] md:max-h-[110px] sm:max-h-[100px] max-h-[100px] mx-auto mb-3' src={products.img} alt='' />
+                2xl:max-h-[140px] xl:max-h-[130px] lg:max-h-[120px] md:max-h-[110px] sm:max-h-[100px] max-h-[100px] mx-auto mb-3'
+                        src={products.img} alt='' />
                 </div>
                 <div className='bg-primary py-2 px-4 flex flex-col gap-1 cardContent'>
                     <h2 className='text-xs'>

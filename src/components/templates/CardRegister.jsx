@@ -81,7 +81,7 @@ const CardRegister = (props) => {
                 <h2 className='text-primary font-semibold 2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-md text-center'>
                     Регистрация
                 </h2>
-                <form action='' method='post' onSubmit={handleSubmit} className='max-w-[400px] mx-auto w-full pt-6 px-12 flex flex-col gap-4 registrationForm'>
+                <form action='' method='post' onSubmit={handleSubmit} className='max-w-[400px] mx-auto w-full pt-6 pb-16 px-12 flex flex-col gap-4 registrationForm'>
                     <div className='flex flex-col'>
                         <label className='mb-2 text-primary' htmlFor="register">Имя:</label>
                         <input

@@ -13,7 +13,7 @@ const OrderCall = () => {
 
 
     const handlePhoneNumberChange = (e) => {
-        const numberValue = e.target.value
+        const numberValue = e.target.value.replace(/[^0-9+]/g, '')
 
         if (numberValue.includes('+')) {
             setNumberError('');
@@ -48,7 +48,7 @@ const OrderCall = () => {
                 <div className='flex flex-col gap-4'>
                     <label htmlFor='orderCallNumber'>Номер телефона <span className='text-red'>*</span></label>
                     <input
-                        type=''
+                        type='text'
                         id='orderCallNumber'
                         required
                         value={phoneNumber}
